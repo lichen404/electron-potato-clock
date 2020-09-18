@@ -10,6 +10,7 @@
     "electron": "^10.0.0"
   },
   "dependencies": {
+    "progressbar.js": "^1.1.0",
     "timer.js": "^1.0.4"
   }
 }

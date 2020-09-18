@@ -16,20 +16,27 @@ async function createWindow() {
 }
 
 function handleIPC() {
-    ipcMain.handle('work-notification', async function () {
-        return await new Promise(((resolve) => {
+    ipcMain.handle('notification', async function (e, {body, title, actions, closeButtonText}) {
+
+        return await new Promise(((resolve, reject) => {
+            console.log({
+                title,
+                body,
+                actions,
+                closeButtonText
+            })
             let notification = new Notification({
-                title: 'task finished',
-                body: 'start to rest or not',
-                actions: [{text: 'start to rest', type: 'button'}],
-                closeButtonText: 'keep working'
+                title,
+                body,
+                actions,
+                closeButtonText
             })
             notification.show()
             notification.on('action', () => {
-                resolve('rest')
+                resolve({event: 'action'})
             })
             notification.on('close', () => {
-                resolve('work')
+                resolve({event: 'close'})
             })
 
         }))

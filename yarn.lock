@@ -417,6 +417,13 @@ progress@^2.0.3:
   resolved "https://registry.npm.taobao.org/progress/download/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha1-foz42PW48jnBvGi+tOt4Vn1XLvg=
 
+progressbar.js@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.rdapp.com/progressbar.js/-/progressbar.js-1.1.0.tgz#300f99be40ba93fb0867f91dff01771236cade70"
+  integrity sha1-MA+ZvkC6k/sIZ/kd/wF3EjbK3nA=
+  dependencies:
+    shifty "^2.1.2"
+
 proto-list@~1.2.1:
   version "1.2.4"
   resolved "https://registry.npm.taobao.org/proto-list/download/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
@@ -490,6 +497,11 @@ serialize-error@^7.0.1:
   integrity sha1-8TYLBEf2H/tIPsQVfHN/q313jhg=
   dependencies:
     type-fest "^0.13.1"
+
+shifty@^2.1.2:
+  version "2.12.0"
+  resolved "http://registry.npm.rdapp.com/shifty/-/shifty-2.12.0.tgz#8eb7a238aad6520d393578f9c3bc58066b90d360"
+  integrity sha1-jreiOKrWUg05NXj5w7xYBmuQ02A=
 
 sprintf-js@^1.1.2:
   version "1.1.2"
